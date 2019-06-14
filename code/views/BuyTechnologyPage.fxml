@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #663300;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.blurical.s107502576.controllers.BuyTechnologyController">
+   <children>
+      <JFXButton fx:id="_buyTech" focusTraversable="false" layoutX="1.0" layoutY="470.0" prefHeight="30.0" prefWidth="200.0" style="-fx-border-color: #808000; -fx-border-width: 1.5;" text="升級" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="_back" focusTraversable="false" layoutX="399.0" layoutY="470.0" prefHeight="30.0" prefWidth="200.0" style="-fx-border-color: #808000; -fx-border-width: 1.5;" text="關閉" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="23.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/coins.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="_money" alignment="CENTER" layoutX="52.0" layoutY="48.0" prefHeight="15.0" prefWidth="118.0" text="99999999" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="_pollution" alignment="CENTER" layoutX="196.0" layoutY="48.0" prefHeight="15.0" prefWidth="118.0" text="9999999999" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="_date" alignment="CENTER" layoutX="471.0" layoutY="48.0" prefHeight="15.0" prefWidth="107.0" text="9999-9-9" textAlignment="CENTER" textFill="WHITE" />
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="171.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/skull.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="443.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/calendar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="324.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/reptution.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="_reputation" alignment="CENTER" layoutX="348.0" layoutY="48.0" prefHeight="15.0" prefWidth="83.0" text="9999" textAlignment="CENTER" textFill="WHITE" />
+      <Pane prefHeight="37.0" prefWidth="600.0" style="-fx-background-color: #804000;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="148.0" layoutX="235.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/main.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_close" fitHeight="30.0" fitWidth="28.0" layoutX="559.0" layoutY="4.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="_field" layoutY="73.0" prefHeight="397.0" prefWidth="600.0" style="-fx-background-color: #c18d59;">
+         <children>
+            <Label fx:id="_level" alignment="CENTER" layoutX="365.0" layoutY="344.0" prefHeight="29.0" prefWidth="107.0" text="10 / 20">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="147.0" layoutY="322.0" text="升級所需費用" />
+            <Label layoutX="383.0" layoutY="322.0" text="當前設施等級" />
+            <Label fx:id="_upgradeCost" alignment="CENTER" layoutX="141.0" layoutY="344.0" prefHeight="29.0" prefWidth="83.0" text="9999">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="_index" alignment="CENTER" layoutX="411.0" layoutY="23.0" prefHeight="15.0" prefWidth="72.0" text="1/99" />
+            <Label fx:id="_category" alignment="CENTER" layoutX="113.0" layoutY="23.0" prefHeight="15.0" prefWidth="83.0" text="類別" />
+            <ImageView fx:id="_categoryMinus" fitHeight="30.0" fitWidth="30.0" layoutX="35.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_categoryPlus" fitHeight="30.0" fitWidth="30.0" layoutX="242.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../assets/arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_indexMinus" fitHeight="30.0" fitWidth="30.0" layoutX="325.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_indexPlus" fitHeight="30.0" fitWidth="30.0" layoutX="533.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../assets/arrow.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="_techName" alignment="CENTER" layoutX="161.0" layoutY="67.0" prefHeight="29.0" prefWidth="277.0" text="電動力汙染處理場">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <JFXButton fx:id="_closeTech" focusTraversable="false" layoutX="201.0" layoutY="470.0" prefHeight="30.0" prefWidth="200.0" style="-fx-border-color: #808000; -fx-border-width: 1.5;" text="部分關廠" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

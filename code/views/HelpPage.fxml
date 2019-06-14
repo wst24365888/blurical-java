@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #663300;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.blurical.s107502576.controllers.HelpPageController">
+   <children>
+      <JFXButton fx:id="_back" focusTraversable="false" layoutX="1.0" layoutY="470.0" prefHeight="30.0" prefWidth="598.0" style="-fx-border-color: #808000; -fx-border-width: 1.5;" text="關閉" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <Pane prefHeight="37.0" prefWidth="600.0" style="-fx-background-color: #804000;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="148.0" layoutX="235.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/main.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_close" fitHeight="30.0" fitWidth="28.0" layoutX="559.0" layoutY="4.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="_field" layoutY="73.0" prefHeight="396.0" prefWidth="600.0" style="-fx-background-color: #c18d59;">
+         <children>
+            <Label fx:id="_index" alignment="CENTER" layoutX="264.0" layoutY="23.0" prefHeight="15.0" prefWidth="72.0" text="1/99" />
+            <ImageView fx:id="_indexMinus" fitHeight="30.0" fitWidth="30.0" layoutX="35.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_indexPlus" fitHeight="30.0" fitWidth="30.0" layoutX="533.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../assets/arrow.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="_helpText" alignment="TOP_LEFT" layoutX="94.0" layoutY="88.0" prefHeight="261.0" prefWidth="411.0" text="Q1. XXXXX?&#10;A1. YYYYY.&#10;&#10;Q2. XXXXX?&#10;A2. YYYYY.&#10;&#10;Q3. XXXXX?&#10;A3. YYYYY.&#10;" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="_relation" fitHeight="313.0" fitWidth="484.0" layoutX="58.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../assets/relation.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Label fx:id="_helpTitle" alignment="CENTER" layoutX="234.0" layoutY="44.0" prefHeight="22.0" prefWidth="131.0" text="Q&amp;A" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
