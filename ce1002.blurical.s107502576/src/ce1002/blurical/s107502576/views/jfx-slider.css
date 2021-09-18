@@ -1,0 +1,14 @@
+/* Styling the slider thumb */
+.jfx-slider > .thumb {
+     -fx-background-color: blue;
+}
+
+/* Styling the filled track */
+.jfx-slider > .colored-track {
+     -fx-background-color: rgba(0, 0, 255, 0.767);
+}
+
+/* Styling the animated thumb */
+.jfx-slider > .animated-thumb {
+     -fx-background-color: rgba(59, 59, 228, 0.767);
+}
